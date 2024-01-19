@@ -318,80 +318,80 @@ section {
 
 #experience {
     position: relative;
-  }
+}
   
-  .experience-sub-title {
+.experience-sub-title {
     color: rgb(85, 85, 85);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
-  }
+}
   
-  .experience-details-container {
+.experience-details-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
-  }
+}
   
-  .article-container {
+.article-container {
     display: flex;
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
     justify-content: center;
-  }
+}
   
-  article {
+article {
     display: flex;
     width: 10rem;
     gap: 0.5rem;
-  }
+}
   
-  article .icon {
+article .icon {
     cursor: default;
-  }
+}
   
   /* PROJECTS SECTION */
   
-  #projects {
+#projects {
     position: relative;
     margin-bottom: 4rem;
-  }
+}
   
-  .color-container {
+.color-container {
     border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
     margin-bottom: 2rem;
-  }
+}
   
-  .project-img {
+.project-img {
     border-radius: 2rem;
     width: 250px;
     height: 250px;
-  }
-  
-  .project-title {
-    margin: 1rem;
-    color: black;
-  }
-
-  .arrow {
-    position: absolute;
-    right: -5rem;
-    bottom: -2rem; /* Adjusted position */
 }
   
-  /* CONTACT */
+.project-title {
+    margin: 1rem;
+    color: black;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: -2rem; 
+}
   
-  #contact {
+/* CONTACT */
+  
+#contact {
     display: flex;
     justify-content: center;
     flex-direction: column;
     height: 70vh;
     margin-top: 4rem;
     margin-bottom: 4rem;
-  }
+}
   
   .contact-info-upper-container {
     display: flex;
@@ -402,35 +402,68 @@ section {
     background: (250, 250, 250);
     margin: 2rem auto;
     padding: 0.5rem;
-  }
+}
   
-  .contact-info-container {
+.contact-info-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
     margin: 1rem;
-  }
+}
   
-  .contact-info-container p {
+.contact-info-container p {
     font-size: larger;
-  }
+}
   
-  .contact-icon {
+.contact-icon {
     cursor: default;
-  }
+}
   
-  .email-icon {
+.email-icon {
     height: 2.5rem;
-  }
+}
   
-  /* FOOTER SECTION */
+/* FOOTER SECTION */
   
-  footer {
+footer {
     height: 26vh;
     margin: 4rem 1rem;
-  }
+    position: relative;
+}
   
-  footer p {
+footer p {
     text-align: center;
-  }
+}
+
+body {
+    --background-color: #fff;
+    --text-color: #333;
+}
+
+body.night-mode {
+    --background-color: #333;
+    --text-color: #fff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+  #night-mode-button {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#night-mode-button:hover {
+    background-color: #333;
+    color: #fff;
+}
