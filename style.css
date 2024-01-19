@@ -37,6 +37,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 17vh;
+    background-color: black;
 }
 
 .nav-links{
@@ -46,7 +47,7 @@ nav {
 }
 
 a {
-    color: black;
+    color: grey;
     text-decoration: none;
     text-decoration-color: white;
 }
@@ -55,7 +56,7 @@ a:hover {
     color: gray;
     text-decoration: underline;
     text-underline-offset: .5rem;
-    text-decoration-color: rgb(181,181,181);
+    text-decoration-color: rgb(151, 151, 151);
 }
 
 .logo{
@@ -89,7 +90,7 @@ a:hover {
 .hamburger-icon span{
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: white;
     transition: all 0.3 ease-in-out;
 }
 
