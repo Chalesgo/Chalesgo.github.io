@@ -7,7 +7,14 @@ function toggleMenu() {
 
 function toggleNightMode() {
     document.body.classList.toggle('night-mode');
+    updateNightModeButton();
+}
+
+function updateNightModeButton() {
+    const isNight = document.body.classList.contains('night-mode');
+    nightModeButton.textContent = isNight ? '☀️' : '🌙';
 }
 
 const nightModeButton = document.getElementById('night-mode-button');
 nightModeButton.addEventListener('click', toggleNightMode);
+updateNightModeButton();
