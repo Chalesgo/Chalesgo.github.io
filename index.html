@@ -38,7 +38,7 @@
     </nav>
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/profile-pic.jpg" alt="Charles Go profile picture">
+            <img src="./assets/about-pic.jpg" alt="Charles Go profile picture">
         </div>
         <div class="section__text">
             <span class="eyebrow">$ whoami</span>
@@ -47,6 +47,7 @@
             <p class="section__text__p2">BSIT Student</p>
             <div class="btn-container">
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+                <button class="btn btn-color-2" onclick="location.href='./#projects'">View Projects</button>
             </div>
             <div id="socials-container">
                 <img src="./assets/email.png" alt="My email" class="icon" onclick="location.href='#contact'">
@@ -57,54 +58,48 @@
     <section id="about">
         <span class="eyebrow">// about</span>
         <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img 
-                src="./assets/about-pic.jpg" 
-                alt="Profile picture" 
-                class="about-pic"
-                />
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img 
-                        src="./assets/experience.png" 
-                        alt="Experience icon"
-                        class="icon"
-                        />
-                        <h3>Experience</h3>
-                        <p>C++|C#|Python</p>
-                    </div>
-                    <div class="details-container">
-                        <img 
-                        src="./assets/education.png" 
-                        alt="Education icon"
-                        class="icon"
-                        />
-                        <h3>Education</h3>
-                        <p>4 years <br>BSIT Student</p>
-                    </div>
+        <div class="about-content">
+            <p class="about-intro">
+                A student, studying in MMCL with the course of BSIT
+            </p>
+            <div class="about-containers">
+                <div class="details-container">
+                    <img 
+                    src="./assets/experience.png" 
+                    alt="Experience icon"
+                    class="icon"
+                    />
+                    <h3>Experience</h3>
+                    <p>C++|C#|Python</p>
                 </div>
-                <div class="text-container">
-                    <p>
-                        A student, studying in MMCL with the course of BSIT
-                    </p>
+                <div class="details-container">
+                    <img 
+                    src="./assets/education.png" 
+                    alt="Education icon"
+                    class="icon"
+                    />
+                    <h3>Education</h3>
+                    <p>4 years <br>BSIT Student</p>
                 </div>
             </div>
         </div>
-        <img 
-        src="./assets/arrow.png" 
-        alt="Arrow icon" 
-        class="icon arrow" 
-        onclick="location.href='./#experience'"
-        />
     </section>
     <section id="experience">
       <span class="eyebrow">// experience</span>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Internship</h2>
+            <div class="article-container internship-entry">
+              <article>
+                <div>
+                  <h3><a href="https://santarosacity.gov.ph/" target="_blank" rel="noopener noreferrer">Santa Rosa City Hall</a></h3>
+                  <p>Technical Intern</p>
+                </div>
+              </article>
+            </div>
+          </div>
           <div class="details-container">
             <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
@@ -149,6 +144,28 @@
                 />
                 <div>
                   <h3>Git</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/1star.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Next.js</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/1star.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
                   <p>Basic</p>
                 </div>
               </article>
@@ -205,19 +222,13 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
     </section>
     <section id="projects">
       <span class="eyebrow">// projects</span>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container color-container">
+          <a class="details-container color-container" href="#" target="_blank" rel="noopener noreferrer"><!-- TODO: replace # with the project link -->
             <div class="article-container">
               <img
                 src="./assets/4pics1word.png"
@@ -230,8 +241,8 @@
               A simple and classic python game <br>
               guessing a word with 4 pictures
             </p>
-          </div>
-          <div class="details-container color-container">
+          </a>
+          <a class="details-container color-container" href="https://github.com/JRADilag/Marine-Adventures" target="_blank" rel="noopener noreferrer"><!-- TODO: replace # with the project link -->
             <div class="article-container">
               <img
                 src="./assets/marineadv.png"
@@ -244,15 +255,54 @@
               A complex C# game where OOP integration <br>
               is crucial to the code
             </p>
-          </div>
+          </a>
+          </a>
+          <a class="details-container color-container" href="#" target="_blank" rel="noopener noreferrer"><!-- TODO: replace # with the project link -->
+            <div class="article-container">
+              <img
+                src="./assets/"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Personify</h2>
+            <p>
+              A Fullstack coded website <br>
+              
+            </p>
+          </a>
+          </a>
+          <a class="details-container color-container" href="#" target="_blank" rel="noopener noreferrer"><!-- TODO: replace # with the project link -->
+            <div class="article-container">
+              <img
+                src="./assets/"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">4 Seasons Cryptology</h2>
+            <p>
+              An Encryption code that uses <br>
+              a modified CBC technique
+            </p>
+          </a>
+          </a>
+          <a class="details-container color-container" href="#" target="_blank" rel="noopener noreferrer"><!-- TODO: replace # with the project link -->
+            <div class="article-container">
+              <img
+                src="./assets/"
+                alt="Project 5"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Unigrab</h2>
+            <p>
+              A website for recipes <br>
+              
+            </p>
+          </a>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
     </section>
     <section id="contact">
       <span class="eyebrow">// contact</span>

@@ -23,15 +23,10 @@
   .experience-details-container {
     margin-top: 2rem;
   }
-  #profile,
-  .section-container {
+  #profile {
     display: block;
   }
-  .arrow {
-    display: none;
-  }
-  section,
-  .section-container {
+  section {
     height: fit-content;
   }
   section {
@@ -97,7 +92,7 @@
     .title {
       font-size: 2rem;
     }
-    .text-container {
+    .about-intro {
       text-align: justify;
     }
   }
